@@ -86,7 +86,7 @@ public class ZfbRedirectUrlServlet2 extends HttpServlet {
 	    out.write("<br/>AccessToken:"+oauthTokenResponse.getAccessToken() + "\n");
 	    
 	      //调用接口获取用户信息
-	    AlipayClient alipayClientUser = new DefaultAlipayClient("https://openapi.alipaydev.com/gateway.do", "2016073100131450", privateKey, "json", "UTF-8", publicKey, "RSA2"); 
+	    AlipayClient alipayClientUser = new DefaultAlipayClient("https://openapi.alipaydev.com/gateway.do", "2016092700608850", privateKey, "json", "UTF-8", publicKey, "RSA2"); 
 	    AlipayUserInfoShareRequest requestUser = new AlipayUserInfoShareRequest();
 	    try {
 	        AlipayUserInfoShareResponse userinfoShareResponse = alipayClient.execute(requestUser, oauthTokenResponse.getAccessToken());
