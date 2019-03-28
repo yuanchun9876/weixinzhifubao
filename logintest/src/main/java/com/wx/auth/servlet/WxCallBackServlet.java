@@ -15,7 +15,7 @@ import net.sf.json.JSONObject;
  * Servlet implementation class CallBackServlet
  */
 @WebServlet("/callBack")
-public class CallBackServlet extends HttpServlet {
+public class WxCallBackServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -47,6 +47,10 @@ public class CallBackServlet extends HttpServlet {
 		JSONObject userObject = AuthUtil.doGetJson(infoUrl);
 		System.out.println(userObject);
 		//{"openid":"o7aMz5v3g_emex__smRbO7JndA9o","nickname":"Ô·´º","sex":1,"language":"zh_CN","city":"¹þ¶û±õ","province":"ºÚÁú½­","country":"ÖÐ¹ú","headimgurl":"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL1A9YkRw7PtvG9wTPPkof0Y7QKNI1rSyrFdZLqkUX0UoSVSe07BlfIia8liaUI0pbBKeG2oAiayhIfw/132","privilege":[]}
+		
+		String msgUrl = "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=" + token;
+		
+		
 		request.setAttribute("user", userObject);
 		request.getRequestDispatcher("/result.jsp").forward(request, response);
 	}

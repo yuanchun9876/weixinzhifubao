@@ -22,7 +22,7 @@ import com.alipay.api.response.AlipayOpenAuthTokenAppResponse;
  * Servlet implementation class RedirectUrlServlet
  */
 @WebServlet("/returnUrl2")
-public class RedirectUrlServlet extends HttpServlet {
+public class ZfbRedirectUrlServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**

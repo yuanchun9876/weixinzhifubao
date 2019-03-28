@@ -15,7 +15,7 @@ import com.wx.auth.util.AuthUtil;
  * Servlet implementation class LoginServlet
  */
 @WebServlet("/wxLogin")
-public class LoginServlet extends HttpServlet {
+public class WxLoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**

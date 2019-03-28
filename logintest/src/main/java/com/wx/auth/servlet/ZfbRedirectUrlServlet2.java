@@ -24,7 +24,7 @@ import com.alipay.api.response.AlipayUserInfoShareResponse;
  * Servlet implementation class RedirectUrlServlet
  */
 @WebServlet("/returnUrl")
-public class RedirectUrlServlet2 extends HttpServlet {
+public class ZfbRedirectUrlServlet2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
